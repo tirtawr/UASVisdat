@@ -33,9 +33,29 @@
 
    <!-- script
    ================================================== -->   
-    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <!-- // <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script> -->
+   //  <!-- <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  	// <script src="js/jquery-ui-1.11.4.custom/jquery-ui.js"></script> -->
+  	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
+	<script>
+	  $(document).ready(function () {
+	    $( "#slider-range" ).slider({
+	      range: true,
+	      min: 0,
+	      max: 500,
+	      values: [ 75, 300 ],
+	      slide: function( event, ui ) {
+	        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+	      }
+	    });
+	    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+	      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+	  });
+	  </script>
 
    <!-- favicons
 	================================================== -->
@@ -178,18 +198,21 @@
 		   			<div class="col-three legend">
 		   				<div class="twelve legend-border">
 		   					<h6>Legend</h6>
-		   					<p>jhdsgdhsgdhsgd sgdshgdhsgdhs dhsg dshgdhsgd sdgshd shgdshgdshd shgdsh</p>
+		   					<div class="legend-rect" id="legend-green"></div>
+		   					<div class="legend-rect"><p>Western</p></div>
+		   					<div class="legend-rect" id="legend-red"></div>
+		   					<div class="legend-rect"><p>Asian</p></div>
 		   				</div>
 		   			</div>
 
 		   			<div class="col-nine price-filter no-padding-section">
 		   				<h6>Price Filter</h6>
-		   				<form action="" class="price-filter-form">
-		   					<div data-role="rangeslider">
-		   					<input type="range" name="price-min" id="price-min" value="200" min="0" max="1000" style="display:none">
-		   					<input type="range" name="price-max" id="price-max" value="800" min="0" max="1000">
-		   					</div>
-		   				</form>
+		   				<p>
+						  <label for="amount">Price range:</label>
+						  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+						</p>
+ 
+						<div id="slider-range"></div>
 		   			</div>
 		   		</div>
 
