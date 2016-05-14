@@ -21,6 +21,10 @@ h1, h5 {
 	font-size: 35px;
 }
 
+.intro-content {
+	margin-top: 275px;
+}
+
 .intro-content .total-number-food {
 	margin-top: 50px;
 }
@@ -226,9 +230,6 @@ h1, h5 {
 	background-color: red;
 	margin-left: 10px;
 }
-.col-twelve {
-	margin-top: 275px;
-}
 
 .col-twelve h5 {
 	font-family: FuturaCondensed;
@@ -249,4 +250,8 @@ h1, h5 {
 
 .img-about {
 	margin-top: 50px;
+}
+
+.home-content {
+	margin-top: 275px;
 }

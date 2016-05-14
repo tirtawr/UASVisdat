@@ -1334,6 +1334,7 @@ header .logo a {
 	-webkit-transform: translateY(-2.1rem);
 	-ms-transform: translateY(-2.1rem);
 	transform: translateY(-2.1rem);
+	margin-top: 275px;
 }
 .intro-content h1 {
 	color: #FFFFFF;
