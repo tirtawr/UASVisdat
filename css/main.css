@@ -100,8 +100,18 @@ a:hover, a:focus, a:active {
  *
  * ------------------------------------------------------------------- 
  */
+@font-face {
+    font-family: FuturaCondensed;
+    src: url("../fonts/futura/FuturaCondensedMedium.otf");
+}
+
+@font-face {
+	font-family: AvenirRegular;
+	src: url("../fonts/futura/AvenirNextLTPro-Regular.otf");
+}
+
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
-	font-family: "poppins-semibold", sans-serif;
+	font-family: FuturaCondensed;
 	color: #313131;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -153,7 +163,7 @@ p img {
 	margin: 0;
 }
 p.lead {
-	font-family: "lora-regular", serif;
+	font-family: AvenirRegular;
 	font-size: 2rem;
 	line-height: 1.8;
 	color: #888888;
@@ -190,7 +200,7 @@ blockquote:before {
 	line-height: 0px;
 	margin: 0;
 	color: #313131;
-	font-family: arial, sans-serif;
+	font-family: AvenirRegular;
 	position: absolute;
 	top: 3rem;
 	left: 0;
@@ -216,7 +226,7 @@ blockquote cite a, blockquote cite a:visited {
 	border: none;
 }
 abbr {
-	font-family: "poppins-bold", serif;
+	font-family: AvenirRegular;
 	font-variant: small-caps;
 	text-transform: lowercase;
 	letter-spacing: .05rem;
@@ -653,7 +663,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
 	display: inline-block;
-	font-family: "poppins-bold", sans-serif;
+	font-family: AvenirRegular;
 	font-size: 1.4rem;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
@@ -1035,7 +1045,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: relative;
 }
 .section-intro h1 {
-	font-family: "poppins-semibold", serif;
+	font-family: FuturaCondensed;
 	font-size: 3.6rem;
 	color: #313131;
 	line-height: 1.25;
@@ -1348,11 +1358,11 @@ header .logo a {
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 .intro-content .intro-position {
-	font-family: "lora-regular", serif;
+	font-family: AvenirRegular;
 	font-size: 1.7rem;
 	line-height: 2.4rem;
 	text-transform: uppercase;
-	letter-spacing: .2rem;
+	letter-spacing: .1rem;
 	color: #FFFFFF;
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
@@ -1492,7 +1502,6 @@ header .logo a {
  */
 #about {
 	background: #2b2a2a;
-	padding-top: 12rem;
 	padding-bottom: 15rem;
 }
 #about .section-intro {
@@ -1524,8 +1533,8 @@ header .logo a {
 	color: white;
 }
 .about-content h3 {
-	font-family: "poppins-bold", sans-serif;
-	font-size: 1.8rem;
+	font-family: FuturaCondensed;
+	font-size: 48px;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
 	color: #FF9900;
