@@ -1,14 +1,46 @@
+@font-face {
+    font-family: FuturaCondensed;
+    src: url("../fonts/futura/FuturaCondensedMedium.otf");
+}
+
+@font-face {
+	font-family: AvenirRegular;
+	src: url("../fonts/futura/AvenirNextLTPro-Regular.otf");
+}
+
+p, a {
+	font-family: AvenirRegular;
+}
+
+h1, h5 {
+	font-family: FuturaCondensed;
+}
+
 #foods {
 	letter-spacing: 40px;
 	font-size: 35px;
 }
 
+.intro-content {
+	margin-top: 275px;
+}
+
 .intro-content .total-number-food {
-	margin-top: 100px;
+	margin-top: 50px;
+}
+
+.intro-content .total-number-food p {
+	font-size: 14px;
+}
+
+.intro-content .total-number-food h6 {
+	font-size: 36px;
+	font-family: FuturaCondensed;
 }
 
 .intro-content .label-number {
 	text-transform: initial;
+	margin-bottom: 10px;
 }
 
 .intro-content .number-food {
@@ -18,6 +50,9 @@
 
 .button.no-stroke{
 	border: transparent;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .intro-content .no-stroke:hover, .intro-content .no-stroke:focus, .button.no-stroke:hover {
@@ -28,12 +63,9 @@
 	content: "";
 }
 
-.intro-content .no-stroke {
-	margin-top: 5.6rem;
-}
-
 .about-custom {
-	min-height: 642px;
+	min-height: 729px;
+	padding-top: 150px;
 }
 
 .content-custom {
@@ -50,17 +82,13 @@
 
 .map-section .map {
 	height: 585px;
-	background-color: grey;
+	background-color: #2b2a2a;
 	padding: 0;
 }
 
 .row-custom {
 	width: 100%;
 	max-width: none;
-}
-
-.row-custom h2 {
-	margin: 1.1rem 0;
 }
 
 .map-section .filter {
@@ -86,11 +114,25 @@
 
 .title {
 	text-align: center;	
+	margin-bottom: 0px;
+	color: #ff9900;
+}
+
+.map-title {
+	text-align: center;	
+	margin-bottom: 0px;
+	padding-top: 8px;
+	color: white;
+}
+
+.title-map-page {
+	background-color: #494646;
 }
 
 .filter-title {
 	background-color: #e3e3e3;
 	border: 1px solid #000;
+	color: white;
 }
 
 .filter-border {
@@ -172,7 +214,6 @@
 	left: -3px;
 	bottom: -1px;
 	border: 1px solid #000;
-	/*padding: 0;*/
 }
 
 .clearfix:after {
@@ -198,4 +239,29 @@
 	height: 12px;
 	background-color: red;
 	margin-left: 10px;
+}
+
+.col-twelve h5 {
+	font-family: FuturaCondensed;
+}
+
+.col-twelve h1 {
+	font-family: FuturaCondensed;
+}
+
+.col-six p .intro-position .label-number {
+	font-family: AvenirRegular;
+	margin-bottom: 10px;
+}
+
+.button .stroke .no-stroke .smoothscroll {
+	margin-top: 20px;
+}
+
+.img-about {
+	margin-top: 50px;
+}
+
+.home-content {
+	margin-top: 275px;
 }
