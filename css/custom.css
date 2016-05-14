@@ -82,17 +82,13 @@ h1, h5 {
 
 .map-section .map {
 	height: 585px;
-	background-color: grey;
+	background-color: #2b2a2a;
 	padding: 0;
 }
 
 .row-custom {
 	width: 100%;
 	max-width: none;
-}
-
-.row-custom h2 {
-	margin: 1.1rem 0;
 }
 
 .map-section .filter {
@@ -118,11 +114,25 @@ h1, h5 {
 
 .title {
 	text-align: center;	
+	margin-bottom: 0px;
+	color: #ff9900;
+}
+
+.map-title {
+	text-align: center;	
+	margin-bottom: 0px;
+	padding-top: 8px;
+	color: white;
+}
+
+.title-map-page {
+	background-color: #494646;
 }
 
 .filter-title {
 	background-color: #e3e3e3;
 	border: 1px solid #000;
+	color: white;
 }
 
 .filter-border {
