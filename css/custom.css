@@ -8,7 +8,7 @@
 	src: url("../fonts/futura/AvenirNextLTPro-Regular.otf");
 }
 
-p, a {
+p, a, span {
 	font-family: AvenirRegular;
 }
 
@@ -80,15 +80,20 @@ h1, h5 {
 	padding: 0;
 }
 
+.padding-right {
+	padding: 0 20px 0 0;
+}
+
 .map-section .map {
-	height: 585px;
-	background-color: #2b2a2a;
+	height: 375px;
+/*	background-color: #2b2a2a;*/
 	padding: 0;
 }
 
 .row-custom {
 	width: 100%;
 	max-width: none;
+	background-color: #2b2a2a;
 }
 
 .map-section .filter {
@@ -100,15 +105,133 @@ h1, h5 {
 }
 
 .legend {
-	padding: 0 10px 0 0;
+	background-color: #393636;
+	padding: 25px;
 }
 
-.legend-border {
-	border: 1px solid #000;
-	padding: 10px;
+.span-legend {
+	font-size: 9px;
+	color: #fff;
 }
 
-.filter h5 {
+#more-western {
+	margin-left: 37px;
+}
+
+#even {
+	margin-left: 44px;
+}
+
+#more-asian {
+	margin-left: 55px;
+}
+
+.label-legend {
+	font-size: 10px;
+	text-align: center;
+	color: #fff;
+}
+
+.label-legend p {
+	position: relative;
+	top: -16px;
+}
+
+.padding-rect {
+	padding: 5px 0 0 0;
+}
+
+.legend-rect {
+	width: 20.77px;
+	height: 20.77px;
+	float: left
+}
+
+#legend-1 {
+	background-color: #85bf25;
+}
+
+#legend-2 {
+	background-color: #9acf38;
+}
+
+#legend-3 {
+	background-color: #b0e055;
+}
+
+#legend-4 {
+	background-color: #c3ed73;
+}
+
+#legend-5 {
+	background-color: #d8eeb0;
+}
+
+#legend-6 {
+	background-color: #e7e7e7;
+}
+
+#legend-7 {
+	background-color: #ffc5c0;
+}
+
+#legend-8 {
+	background-color: #ff9c8b;
+}
+
+#legend-9 {
+	background-color: #ff7762;
+}
+
+#legend-10 {
+	background-color: #ff5343;
+}
+
+#legend-11 {
+	background-color: #ff332a;
+}
+
+#legend-green-20 {
+	margin-left: 12px;
+}
+
+#legend-green-15 {
+	margin-left: 6px;
+}
+
+#legend-green-10 {
+	margin-left: 8px;
+}
+
+#legend-green-5 {
+	margin-left: 10px;
+}
+
+#legend-green-1 {
+	margin-left: 12px;
+}
+
+#legend-red-1 {
+	margin-left: 15px;
+}
+
+#legend-red-5 {
+	margin-left: 14px;
+}
+
+#legend-red-10 {
+	margin-left: 10px;
+}
+
+#legend-red-15 {
+	margin-left: 8px;
+}
+
+#legend-red-20 {
+	margin-left: 6px;
+}
+
+.filter h5, .label-legend p {
 	margin-bottom: 0;
 }
 
@@ -121,12 +244,17 @@ h1, h5 {
 .map-title {
 	text-align: center;	
 	margin-bottom: 0px;
-	padding-top: 8px;
 	color: white;
+	font-size: 28px;
+}
+
+.map-title-about {
+	font-size: 18px;
 }
 
 .title-map-page {
 	background-color: #494646;
+	padding: 16px 0 23px 0;
 }
 
 .filter-title {
@@ -222,23 +350,6 @@ h1, h5 {
 
 .summary {
 	border: 1px solid #000;
-}
-
-.legend-rect {
-	display: inline-block;
-}
-
-#legend-green {
-	width: 12px;
-	height: 12px;
-	background-color: green;
-}
-
-#legend-red {
-	width: 12px;
-	height: 12px;
-	background-color: red;
-	margin-left: 10px;
 }
 
 .col-twelve h5 {
