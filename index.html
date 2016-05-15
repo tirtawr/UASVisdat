@@ -31,8 +31,10 @@
   <!-- end -->
 
   <!-- MapBox -->
-  <script src='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
+  <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' /> -->
+  <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
   <!-- End MapBox -->
 
    <!-- script
@@ -247,11 +249,12 @@
 	   			<div class="col-twelve no-padding-section location">
 		   			<h6 class="filter-type-title">LOCATION</h6>
 		   			<form action="" class="location-form">
-					   	<input type="checkbox" name="location" value="jakut" class="input-custom"><label>Jakarta Utara</label><br>
-					   	<input type="checkbox" name="location" value="jaksel" class="input-custom"><label>Jakarta Selatan</label><br>
-					   	<input type="checkbox" name="location" value="jakbar" class="input-custom"><label>Jakarta Barat</label><br>
-					   	<input type="checkbox" name="location" value="jaktim" class="input-custom"><label>Jakarta Timur</label><br>
-					   	<input type="checkbox" name="location" value="jakpus" class="input-custom"><label>Jakarta Pusat</label>
+					   	<input type="button" name="location" value="jakut" onClick="setFocusJakut()" class="input-custom"><br>
+					   	<input type="button" name="location" value="jaksel" onClick="setFocusJaksel()" class="input-custom"><br>
+					   	<input type="button" name="location" value="jakbar" onClick="setFocusJakbar()" class="input-custom"><br>
+					   	<input type="button" name="location" value="jaktim" onClick="setFocusJaktim()" class="input-custom"><br>
+					   	<input type="button" name="location" value="jakpus" onClick="setFocusJakpus()" class="input-custom"><br>
+              <input type="button" name="location" value="jakarta" onClick="setFocusJakarta()" class="input-custom">
 		   			</form>
 		   		</div>
 
@@ -304,15 +307,9 @@
     <div id="loader"></div>
   </div>
 
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoidGlydGF3ciIsImEiOiJjaW5yYzkydjExMGp3dWlramtiaHdmNWphIn0.V5IbaPvJ6hp_HjTqTw8kHg';
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/dark-v9',
-        center: [106.84110234745356, -6.217047026044142],
-        zoom: 10.5
-    });
-  </script>
+  <!-- MapBox Interaction -->
+  <script src="js/map.interaction.js"></script>
+
 
 
    <!-- Java Script
