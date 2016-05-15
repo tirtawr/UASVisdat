@@ -8,11 +8,7 @@
 	src: url("../fonts/futura/AvenirNextLTPro-Regular.otf");
 }
 
-<<<<<<< HEAD
 p, a, span, label {
-=======
-p, a, span {
->>>>>>> b56a1d98f7eb5260f84ddf92d275f6a15728a6d7
 	font-family: AvenirRegular;
 }
 
@@ -93,11 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .map-section .map {
-<<<<<<< HEAD
 	height: 526px;
-=======
-	height: 375px;
->>>>>>> b56a1d98f7eb5260f84ddf92d275f6a15728a6d7
 /*	background-color: #2b2a2a;*/
 	padding: 0;
 }
@@ -119,7 +111,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .legend {
 	background-color: #393636;
-<<<<<<< HEAD
 	padding: 32px 25px;
 }
 
@@ -274,131 +265,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	color: #fff;
 	font-size: 12px;
-=======
-	padding: 25px;
-}
-
-.span-legend {
-	font-size: 9px;
-	color: #fff;
-}
-
-#more-western {
-	margin-left: 37px;
-}
-
-#even {
-	margin-left: 44px;
-}
-
-#more-asian {
-	margin-left: 55px;
-}
-
-.label-legend {
-	font-size: 10px;
-	text-align: center;
-	color: #fff;
-}
-
-.label-legend p {
-	position: relative;
-	top: -16px;
-}
-
-.padding-rect {
-	padding: 5px 0 0 0;
-}
-
-.legend-rect {
-	width: 20.77px;
-	height: 20.77px;
-	float: left
-}
-
-#legend-1 {
-	background-color: #85bf25;
-}
-
-#legend-2 {
-	background-color: #9acf38;
-}
-
-#legend-3 {
-	background-color: #b0e055;
-}
-
-#legend-4 {
-	background-color: #c3ed73;
-}
-
-#legend-5 {
-	background-color: #d8eeb0;
-}
-
-#legend-6 {
-	background-color: #e7e7e7;
-}
-
-#legend-7 {
-	background-color: #ffc5c0;
-}
-
-#legend-8 {
-	background-color: #ff9c8b;
-}
-
-#legend-9 {
-	background-color: #ff7762;
-}
-
-#legend-10 {
-	background-color: #ff5343;
-}
-
-#legend-11 {
-	background-color: #ff332a;
-}
-
-#legend-green-20 {
-	margin-left: 12px;
-}
-
-#legend-green-15 {
-	margin-left: 6px;
-}
-
-#legend-green-10 {
-	margin-left: 8px;
-}
-
-#legend-green-5 {
-	margin-left: 10px;
-}
-
-#legend-green-1 {
-	margin-left: 12px;
-}
-
-#legend-red-1 {
-	margin-left: 15px;
-}
-
-#legend-red-5 {
-	margin-left: 14px;
-}
-
-#legend-red-10 {
-	margin-left: 10px;
-}
-
-#legend-red-15 {
-	margin-left: 8px;
-}
-
-#legend-red-20 {
-	margin-left: 6px;
->>>>>>> b56a1d98f7eb5260f84ddf92d275f6a15728a6d7
 }
 
 .filter h5, .label-legend p {
@@ -424,11 +290,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .title-map-page {
 	background-color: #494646;
-<<<<<<< HEAD
 	padding: 16px 0 18px 0;
-=======
-	padding: 16px 0 23px 0;
->>>>>>> b56a1d98f7eb5260f84ddf92d275f6a15728a6d7
 }
 
 .filter-title {
@@ -556,7 +418,6 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-<<<<<<< HEAD
 #western-number {
 	color: #85bf25;
 	font-size: 24px;
@@ -577,8 +438,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 10px;
 }
 
-=======
->>>>>>> b56a1d98f7eb5260f84ddf92d275f6a15728a6d7
 .col-twelve h5 {
 	font-family: FuturaCondensed;
 }
