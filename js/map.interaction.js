@@ -5,28 +5,70 @@ var map = L.mapbox.map('map', 'tirtawr.04ok4cf2');
 
 setFocusJakarta();
 
+var disabledAttrs = []
 
+$(".checkbox").change(function() {
+  var temp = [];
+  $('input[type=checkbox]:checked').each(function() {
+    switch (this.value) {
+      case 'jakpus':
+        temp.push('Kota Jakarta Pusat');
+        break;
+      case 'jakbar':
+        temp.push('Kota Jakarta Barat');
+        break;
+      case 'jaktim':
+        temp.push('Kota Jakarta Timur');
+        break;
+      case 'jaksel':
+        temp.push('Kota Jakarta Selatan');
+        break;
+      case 'jakut':
+        temp.push('Kota Jakarta Utara');
+        break;
+      default:
+        temp.push(this.value);
+      }
+  });
+  disabledAttrs = temp;
+  console.log(disabledAttrs);
 
+    
+});
 
-// mapboxgl.accessToken = 'pk.eyJ1IjoidGlydGF3ciIsImEiOiJjaW5yYzkydjExMGp3dWlramtiaHdmNWphIn0.V5IbaPvJ6hp_HjTqTw8kHg';
-// // L.mapbox.map('map', 'tirtawr.04ok4cf2');
-// var map = new mapboxgl.Map({
-//     container: 'map',
-//     style: 'mapbox://styles/mapbox/dark-v9',
-//     center: [106.84110234745356, -6.217047026044142],
-//     zoom: 10.5
-// });
-//
-// map.addSource('restaurant-data', {
-//     type: 'geojson',
-//     url: 'https://a.tiles.mapbox.com/v4/tirtawr.04ok4cf2/features.json?access_token=pk.eyJ1IjoidGlydGF3ciIsImEiOiJjaW5yYzkydjExMGp3dWlramtiaHdmNWphIn0.V5IbaPvJ6hp_HjTqTw8kHg'
-// });
-//
-function eraseAllMarkers() {
-  var featureLayer = L.mapbox.featureLayer(geojson)
+var mapFilter = function(feature) {
+  // console.log(feature);
+  // return true;
+  for (var i = 0; i < disabledAttrs.length; i++) {
+    // var featureAttrs = feature.properties.map_name.split(' | ');
+    if(feature.properties.map_name.indexOf(disabledAttrs[i]) > -1 ){
+      console.log('--F - ', feature.properties.map_name);
+      return false;
+    }else{
+      // console.log('T-- - ', feature.properties.map_name);
+      // return true;
+    }
+    // disabledAttrs[i]
+  }
+  return true;
+}
+
+function applyFilter(filter) {
+  var featureLayer = map.featureLayer
     // hide all markers
-    .setFilter(function() { return false; })
+    .setFilter(filter)
     .addTo(map);
+}
+
+function eraseAllMarkers() {
+  var featureLayer = map.featureLayer
+    // hide all markers
+    .setFilter(function(feature) {
+      console.log(feature);
+      return false;
+    })
+    .addTo(map);
+  // map.featureLayer._geojson = [];
 }
 
 function setFocusJakarta() {
