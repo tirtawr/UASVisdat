@@ -73,7 +73,7 @@ body {
 	background: #151515;
 	font-family: "lora-regular", serif;
 	font-size: 1.7rem;
-	line-height: 3rem;
+	line-height: 15px;
 	color: #6e6e6e;
 }
 
@@ -2587,9 +2587,9 @@ footer .copyright span:last-child::after {
 	text-decoration: none;
 	border: 0 none;
 	display: block;
-	height: 6.6rem;
-	width: 6rem;
-	line-height: 6.6rem;
+	height: 45px;
+	width: 45px;
+	line-height: 50px;
 	text-align: center;
 	background: #ff9900;
 	color: #FFFFFF;

@@ -33,7 +33,7 @@
    <!-- script
    ================================================== -->   
 
-  	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
   	<script src="js/jquery-2.1.3.min.js"></script>
   	<script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 	<script src="js/modernizr.js"></script>
@@ -135,45 +135,87 @@
 	<section id="map-section" class="grey-section map-section">
 
 		<div class="row row-custom">
-	   		<div class="col-nine no-padding-section">
+	   		<div class="col-nine padding-right">
 	   			<div class="title-map-page">
 	   				<h2 class="title map-title">THE NUMBER OF WESTERN AND ASIAN FOODS IN JAKARTA</h2>
-	   				<p class="title">Where Western Food Outnumbers Asian</p>
+	   				<p class="title map-title-about">Where Western Food Outnumbers Asian</p>
 	   			</div>
 	   			
 	   			<div class="map">
 	   			</div>
 	   			
 	   			<div class="col-twelve under-map">
-		   			<div class="col-three legend">
-		   				<div class="twelve legend-border">
-		   					<h6>Legend</h6>
-		   					<div class="legend-rect" id="legend-green"></div>
-		   					<div class="legend-rect"><p>Western</p></div>
-		   					<div class="legend-rect" id="legend-red"></div>
-		   					<div class="legend-rect"><p>Asian</p></div>
-		   				</div>
+		   			<div class="col-five padding-right">
+		   				<div class="col-twelve legend">
+			   				<div class="col-twelve span-legend">
+			   					<span id="more-western">More Western</span>
+			   					<span id="even">Even</span>
+			   					<span id="more-asian">More Asian</span>
+			   				</div>
+			   				<div class="col-twelve no-padding-section">
+			   					<div class="col-two no-padding-section label-legend">
+			   						<img src="images/meat.png">
+			   						<p>Western</p>
+			   					</div>
+			   					<div class="col-eight padding-rect">
+			   						<div class="col-twelve no-padding-section">
+			   							<div class="legend-rect" id="legend-1"></div>
+					   					<div class="legend-rect" id="legend-2"></div>
+					   					<div class="legend-rect" id="legend-3"></div>
+					   					<div class="legend-rect" id="legend-4"></div>
+					   					<div class="legend-rect" id="legend-5"></div>
+					   					<div class="legend-rect" id="legend-6"></div>
+					   					<div class="legend-rect" id="legend-7"></div>
+					   					<div class="legend-rect" id="legend-8"></div>
+					   					<div class="legend-rect" id="legend-9"></div>
+					   					<div class="legend-rect" id="legend-10"></div>
+					   					<div class="legend-rect" id="legend-11"></div>
+			   						</div>
+			   						<div class="col-twelve no-padding-section span-legend legend-total">
+			   							<span id="legend-green-20">>20</span>
+			   							<span id="legend-green-15">15</span>
+			   							<span id="legend-green-10">10</span>
+			   							<span id="legend-green-5">5</span>
+			   							<span id="legend-green-1">1</span>
+			   							<span id="legend-red-1">1</span>
+			   							<span id="legend-red-5">5</span>
+			   							<span id="legend-red-10">10</span>
+			   							<span id="legend-red-15">15</span>
+			   							<span id="legend-red-20">>20</span>
+			   						</div>
+			   					</div>
+			   					<div class="col-two no-padding-section label-legend">
+			   						<img src="images/sushi.png">
+			   						<p>Asian</p>
+			   					</div>
+			   				</div>
+			   			</div>
 		   			</div>
 
-		   			<div class="col-nine price-filter no-padding-section">
-		   				<h6>Price Filter</h6>
-		   				<p>
-						  <label for="amount">Price range:</label>
-						  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-						</p>
- 
-						<div id="slider-range"></div>
+		   			<div class="col-seven price-filter no-padding-section">
+		   				<div class="price-filter-label">
+		   					<h3>FILTER BY</h3>
+		   					<h3>PRICE RANGE</h3>
+		   				</div>
+		   				<div class="price-filter-range">
+			   				<p>
+							  <label for="amount">Price range:</label>
+							  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+							</p>
+	
+							<div id="slider-range"></div>
+						</div>
 		   			</div>
 		   		</div>
 
 	   		</div>
 
 	   		<div class="col-three filter no-padding-section">
-	   			<h5 class="title filter-title">judul</h5>
+	   			<h5 class="title filter-title">LOOK UP SPECIFICALLY</h5>
 
-	   			<div class="col-twelve filter-border cuisine">
-	   				<h6>CUISINE</h6>
-	   				<div class="col-six cuisine-half">
+	   			<div class="col-twelve no-padding-section cuisine">
+	   				<h4 class="filter-type-title">CUISINE</h4>
+	   				<div class="col-six no-padding-section cuisine-half">
 	   					<h6>Western</h6>
 	   					<form action="" class="cuisine-form">
 		   					<input type="checkbox" name="cuisine" value="pizza" class="input-custom"><label>pizza</label><br>
@@ -183,7 +225,7 @@
 		   					<input type="checkbox" name="cuisine" value="pasta" class="input-custom"><label>pasta</label>
 	   					</form>
 	   				</div>
-	   				<div class="col-six cuisine-half">
+	   				<div class="col-six no-padding-section cuisine-half">
 	   					<h6>Eastern</h6>
 	   					<form action="" class="cuisine-form">
 		   					<input type="checkbox" name="cuisine" value="pizza" class="input-custom"><label>pizza</label><br>
@@ -195,21 +237,19 @@
 	   				</div>
 	   			</div>
 
-	   			<div class="col-twelve filter-border location">
-		   			<h6>LOCATION</h6>
+	   			<div class="col-twelve no-padding-section location">
+		   			<h6 class="filter-type-title">LOCATION</h6>
 		   			<form action="" class="location-form">
-		   				<ul class="checkbox">
-					   		<li><input type="checkbox" name="location" value="jakut" class="input-custom"><label>Jakarta Utara</li>
-					   		<li><input type="checkbox" name="location" value="jaksel" class="input-custom"><label>Jakarta Selatan</label></li>
-					   		<li><input type="checkbox" name="location" value="jakbar" class="input-custom"><label>Jakarta Barat</label></li>
-					   		<li><input type="checkbox" name="location" value="jaktim" class="input-custom"><label>Jakarta Timur</label></li>
-					   		<li><input type="checkbox" name="location" value="jakpus" class="input-custom"><label>Jakarta Pusat</label></li>
-		   				</ul>
+					   	<input type="checkbox" name="location" value="jakut" class="input-custom"><label>Jakarta Utara</label><br>
+					   	<input type="checkbox" name="location" value="jaksel" class="input-custom"><label>Jakarta Selatan</label><br>
+					   	<input type="checkbox" name="location" value="jakbar" class="input-custom"><label>Jakarta Barat</label><br>
+					   	<input type="checkbox" name="location" value="jaktim" class="input-custom"><label>Jakarta Timur</label><br>
+					   	<input type="checkbox" name="location" value="jakpus" class="input-custom"><label>Jakarta Pusat</label>
 		   			</form>
 		   		</div>
 
-		   		<div class="col-twelve filter-border rating">
-		   			<h6>RATING</h6>
+		   		<div class="col-twelve no-padding-section rating">
+		   			<h6 class="filter-type-title">RATING</h6>
 		   			<form action="" class="rating-form">
 		   				<input type="radio" name="rating" value="5" id="star5"><label for="star5"></label>
 		   				<input type="radio" name="rating" value="4" id="star4"><label for="star4"></label>
@@ -224,6 +264,15 @@
 						<input type="text" class="input-custom">
 						<input type="submit" class="input-custom" value="">
 					</form>
+		   		</div>
+
+		   		<div class="col-twelve no-padding-section number-versus">
+		   			<h6 class="filter-type-title">WESTERN VS ASIAN</h6>
+		   			<div class="col-twelve no-padding-section number-versus-content">
+			   			<span id="western-number">1000</span>
+			   			<span id="vs">vs</span>
+			   			<span id="asian-number">2000</span>
+			   		</div>
 		   		</div>
 
 		   		<div class="col-twelve summary no-padding-section">

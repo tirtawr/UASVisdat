@@ -8,11 +8,11 @@
 	src: url("../fonts/futura/AvenirNextLTPro-Regular.otf");
 }
 
-p, a {
+p, a, span, label {
 	font-family: AvenirRegular;
 }
 
-h1, h5 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: FuturaCondensed;
 }
 
@@ -68,6 +68,10 @@ h1, h5 {
 	padding-top: 150px;
 }
 
+.about-custom p {
+	line-height: 20px;
+}
+
 .content-custom {
 	max-width: 1000px;
 }
@@ -80,19 +84,25 @@ h1, h5 {
 	padding: 0;
 }
 
+.padding-right {
+	padding: 0 20px 0 0;
+}
+
 .map-section .map {
-	height: 585px;
-	background-color: #2b2a2a;
+	height: 526px;
+/*	background-color: #2b2a2a;*/
 	padding: 0;
 }
 
 .row-custom {
 	width: 100%;
 	max-width: none;
+	background-color: #2b2a2a;
 }
 
 .map-section .filter {
 	font-size: 12px;
+	color: #fff;
 }
 
 .under-map {
@@ -100,15 +110,164 @@ h1, h5 {
 }
 
 .legend {
-	padding: 0 10px 0 0;
+	background-color: #393636;
+	padding: 32px 25px;
 }
 
-.legend-border {
-	border: 1px solid #000;
-	padding: 10px;
+.span-legend {
+	font-size: 9px;
+	color: #fff;
 }
 
-.filter h5 {
+#more-western {
+	margin-left: 34px;
+}
+
+#even {
+	margin-left: 44px;
+}
+
+#more-asian {
+	margin-left: 41px;
+}
+
+.label-legend {
+	font-size: 10px;
+	text-align: center;
+	color: #fff;
+}
+
+.padding-rect {
+	padding: 5px 0 0 0;
+}
+
+.legend-rect {
+	width: 19.48px;
+	height: 19.48px;
+	float: left
+}
+
+#legend-1 {
+	background-color: #85bf25;
+}
+
+#legend-2 {
+	background-color: #9acf38;
+}
+
+#legend-3 {
+	background-color: #b0e055;
+}
+
+#legend-4 {
+	background-color: #c3ed73;
+}
+
+#legend-5 {
+	background-color: #d8eeb0;
+}
+
+#legend-6 {
+	background-color: #e7e7e7;
+}
+
+#legend-7 {
+	background-color: #ffc5c0;
+}
+
+#legend-8 {
+	background-color: #ff9c8b;
+}
+
+#legend-9 {
+	background-color: #ff7762;
+}
+
+#legend-10 {
+	background-color: #ff5343;
+}
+
+#legend-11 {
+	background-color: #ff332a;
+}
+
+#legend-green-20 {
+	margin-left: 11px;
+}
+
+#legend-green-15 {
+	margin-left: 5px;
+}
+
+#legend-green-10 {
+	margin-left: 6px;
+}
+
+#legend-green-5 {
+	margin-left: 9px;
+}
+
+#legend-green-1 {
+	margin-left: 11px;
+}
+
+#legend-red-1 {
+	margin-left: 13px;
+}
+
+#legend-red-5 {
+	margin-left: 12px;
+}
+
+#legend-red-10 {
+	margin-left: 10px;
+}
+
+#legend-red-15 {
+	margin-left: 8px;
+}
+
+#legend-red-20 {
+	margin-left: 5px;
+}
+
+.price-filter, .summary {
+	background-color: #393636;
+	height: 118px;
+}
+
+.price-filter-label {
+	width: 121px;
+	background-color: #555151;
+	float: left;
+	text-align: center;
+	padding: 31px 21px;
+	height: inherit;
+}
+
+.price-filter-label h3 {
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 0; 
+}
+
+.price-filter-range {
+	float: left;
+	padding: 10px 12px;
+}
+
+.price-filter input {
+	height: 1rem;
+	margin: 0;
+}
+
+.price-filter p, .price-filter label {
+	margin: 0;
+	color: #fff;
+	font-size: 12px;
+}
+
+.filter h5, .label-legend p {
 	margin-bottom: 0;
 }
 
@@ -121,28 +280,60 @@ h1, h5 {
 .map-title {
 	text-align: center;	
 	margin-bottom: 0px;
-	padding-top: 8px;
 	color: white;
+	font-size: 28px;
+}
+
+.map-title-about {
+	font-size: 18px;
 }
 
 .title-map-page {
 	background-color: #494646;
+	padding: 16px 0 18px 0;
 }
 
 .filter-title {
-	background-color: #e3e3e3;
-	border: 1px solid #000;
+	background-color: #494646;
 	color: white;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 20px;
 }
 
-.filter-border {
-	border-bottom: 1px solid #000;
-	border-left: 1px solid #000;
-	border-right: 1px solid #000;
-}
-
-.filter h6, .filter form, .filter p {
+.filter h6, .filter p {
 	margin-bottom: 1rem;
+}
+
+.cuisine, .location, .rating, .number-versus, .summary {
+	background-color: #393636;
+}
+
+.filter .filter-type-title {
+	text-align: center;
+	background-color: #555151;
+	font-size: 18px;
+	padding: 0px 0;
+	margin: 0;
+	color: #fff;
+}
+
+.cuisine-half, .location-form, .summary {
+	padding: 10px 12px;
+	margin: 0;
+}
+
+.rating-form, .number-versus-content {
+	padding: 18px 8px 11.3px 8px;
+	margin: 0;
+}
+
+.cuisine h6 {
+	text-align: center;
+	color: #fff;
+	font-family: AvenirRegular;
+	text-transform: capitalize;
+	margin: 0;
 }
 
 .input-custom {
@@ -151,22 +342,22 @@ h1, h5 {
 
 .cuisine-form {
 	position: inherit;
-}
-
-.location-form li {
-	display: inline-block;
-	float: left;
-	width: 50%;
+	margin: 0;
 }
 
 .location-form label, .rating-form label, .cuisine-form label {
 	display: inline-block;
-	font-size: 12px;
+	font-size: 11px;
+	color: #fff;
 	margin-right: 10px;
 	margin-bottom: 0;
 	position: relative;
-	bottom: 2px;
-	left: 2px;
+	bottom: 0px;
+	left: 4px;
+}
+
+.rating-form {
+	text-align: center;
 }
 
 .rating-form > input {
@@ -188,18 +379,22 @@ h1, h5 {
 .rating-form > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating-form > input:checked ~ label:hover ~ label { color: #FFED85;  } 
 
-.search-filter, .summary{
-	margin-top: 10px;
+.search-filter, .summary, .number-versus {
+	margin-top: 20px;
+}
+
+.search-filter {
+	height: 50px;
 }
 
 .search-filter input[type="text"] {
 	display: inline;
-	height: 3.2rem;
-	width: 292px;
-	border: 1px solid #000;
+	height: 50px;
+	width: 276.85px;
+	background-color: #494646;
 	padding: 0;
 	margin: 0;
-	font-family: arial, sans-serif;
+	font-family: AvenirRegular;
 }
 
 .search-filter input[type="submit"] {
@@ -207,38 +402,40 @@ h1, h5 {
 	position: relative;
 	background: url(../images/search.png) no-repeat;
 	background-position: center;
-	background-color: grey;
-	padding: 11px 2rem;
-	height: 32px;
+	background-color: #555151;
+	padding: 25px 2rem 24.4px 2rem;
+	height: 42px;
 	margin: 0;
 	left: -3px;
-	bottom: -1px;
-	border: 1px solid #000;
+	bottom: 3px;
 }
 
 .clearfix:after {
 	clear: both;
 }
 
-.summary {
-	border: 1px solid #000;
+.number-versus-content {
+	text-align: center;
 }
 
-.legend-rect {
-	display: inline-block;
+#western-number {
+	color: #85bf25;
+	font-size: 24px;
 }
 
-#legend-green {
-	width: 12px;
-	height: 12px;
-	background-color: green;
+#vs {
+	color: #fff;
+	font-size: 20px;
 }
 
-#legend-red {
-	width: 12px;
-	height: 12px;
-	background-color: red;
-	margin-left: 10px;
+#asian-number {
+	color: #ff332a;
+	font-size: 24px;
+}
+
+.summary p {
+	color: #fff;
+	font-size: 10px;
 }
 
 .col-twelve h5 {
