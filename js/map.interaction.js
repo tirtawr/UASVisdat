@@ -6,6 +6,10 @@ var map = L.mapbox.map('map', 'tirtawr.04ok4cf2');
 setFocusJakarta();
 
 var disabledAttrs = []
+var jumAsian = 0;
+var jumWestern = 0;
+
+$("input:checkbox").prop('checked', true);
 
 $(".checkbox").change(function() {
   var temp = [];
@@ -33,31 +37,35 @@ $(".checkbox").change(function() {
   disabledAttrs = temp;
   console.log(disabledAttrs);
 
-    
+
 });
 
 var mapFilter = function(feature) {
-  // console.log(feature);
-  // return true;
   for (var i = 0; i < disabledAttrs.length; i++) {
-    // var featureAttrs = feature.properties.map_name.split(' | ');
     if(feature.properties.map_name.indexOf(disabledAttrs[i]) > -1 ){
-      console.log('--F - ', feature.properties.map_name);
-      return false;
-    }else{
-      // console.log('T-- - ', feature.properties.map_name);
-      // return true;
+      return true;
     }
-    // disabledAttrs[i]
   }
-  return true;
+  if(feature.properties.map_name.split(' | ')[0] == "Asian"){
+    jumAsian++;
+  }else{
+    jumWestern++;
+  }
+  return false;
 }
 
 function applyFilter(filter) {
+  jumAsian = 0;
+  jumWestern = 0;
   var featureLayer = map.featureLayer
     // hide all markers
     .setFilter(filter)
     .addTo(map);
+
+  console.log("Asian = ", jumAsian);
+  console.log("Western = ", jumWestern);
+  $("#western-number").text(jumWestern);
+  $("#asian-number").text(jumAsian);
 }
 
 function eraseAllMarkers() {
