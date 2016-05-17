@@ -254,9 +254,10 @@ h1, h2, h3, h4, h5, h6 {
 .price-filter-range {
 	float: left;
 	padding: 10px 12px;
+	width: 427px;
 }
 
-.price-filter input {
+.price-filter-range input {
 	height: 1rem;
 	margin: 0;
 }
@@ -346,7 +347,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
-.location-form label, .rating-form label, .cuisine-form label {
+.location-form label, .rating-form label, .cuisine-form label, .price-filter-range label {
 	display: inline-block;
 	font-size: 11px;
 	color: #fff;
