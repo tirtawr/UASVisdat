@@ -41,17 +41,24 @@ $(".checkbox").change(function() {
 });
 
 var mapFilter = function(feature) {
+  var found = 0;
   for (var i = 0; i < disabledAttrs.length; i++) {
     if(feature.properties.map_name.indexOf(disabledAttrs[i]) > -1 ){
-      return true;
+      console.log('FOUND(',disabledAttrs[i],') - ', feature.properties.map_name);
+      found++;
     }
   }
-  if(feature.properties.map_name.split(' | ')[0] == "Asian"){
-    jumAsian++;
+
+  if (found > 2) {
+    if(feature.properties.map_name.split(' | ')[0] == "Asian"){
+      jumAsian++;
+    }else{
+      jumWestern++;
+    }
+    return true;
   }else{
-    jumWestern++;
+    return false;
   }
-  return false;
 }
 
 function applyFilter(filter) {
