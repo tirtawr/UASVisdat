@@ -47,6 +47,9 @@
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
 	<script>
+		// $(document).ready(function() {
+		// 	applyFilter(mapFilter);
+		// });
 	  // jQuery(document).ready(function () {
 	  //   jQuery( "#slider-range" ).slider({
 	  //     range: true,
@@ -121,7 +124,7 @@
    		<div class="col-nine tab-full">
 
    			<h3>ABOUT</h3>
-   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum. Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum. Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+   			<p>Living in one of the densest city in the world, citizens of Jakarta need one thing to satisfy the appetite that comes from their hectic daily life: Food! Thousands of restaurants are established in Jakarta. Are you looking for the place where steaks, pastas, and burgers are ordered thousands of time everyday? Or are you looking for a place to start a new Sushi business? Here we show the distribution, comparison, and facts between asian and western restaurants in Jakarta, for you.</p>
    			<div>
    				<a class="button smoothscroll about-button" href="#map-section">Discover</a>
    			</div>
@@ -150,23 +153,27 @@
 	   			</div>
 
 
-          <div id='map' class="center" style='width: 100%; height: 500px;'></div>
+          <div id='map' class="center"></div>
 
 
 	   			<div class="col-twelve under-map">
 		   			<div class="col-five padding-right">
-		   				<div class="col-twelve legend">
-			   				<div class="col-twelve span-legend">
+		   				<div class="price-filter-label legend-label">
+			   				<h3>LEGEND</h3>
+			   			</div>
+		   				<div class="legend">
+			   				<!-- <div class="col-twelve span-legend">
 			   					<span id="more-western">More Western</span>
 			   					<span id="even">Even</span>
 			   					<span id="more-asian">More Asian</span>
-			   				</div>
-			   				<div class="col-twelve no-padding-section">
-			   					<div class="col-two no-padding-section label-legend">
+			   				</div> -->
+			   				<div class="col-twelve no-padding-section label-legend">
+			   					<!-- <div class="label-legend"> -->
+			   						<div class="legend-rect" id="legend-1"></div>
 			   						<img src="images/meat.png">
 			   						<p>Western</p>
-			   					</div>
-			   					<div class="col-eight padding-rect">
+			   					<!-- </div> -->
+			   					<!-- <div class="col-eight padding-rect">
 			   						<div class="col-twelve no-padding-section">
 			   							<div class="legend-rect" id="legend-1"></div>
 					   					<div class="legend-rect" id="legend-2"></div>
@@ -191,12 +198,13 @@
 			   							<span id="legend-red-10">10</span>
 			   							<span id="legend-red-15">15</span>
 			   							<span id="legend-red-20">>20</span>
-			   						</div>
-			   					</div>
-			   					<div class="col-two no-padding-section label-legend">
+			   						</div> -->
+			   					<!-- </div> -->
+			   					<!-- <div class="label-legend" id="label-legend-asian"> -->
+			   						<div class="legend-rect" id="legend-11"></div>
 			   						<img src="images/sushi.png">
 			   						<p>Asian</p>
-			   					</div>
+			   					<!-- </div> -->
 			   				</div>
 			   			</div>
 		   			</div>
@@ -207,27 +215,27 @@
 		   					<h3>PRICE RANGE</h3>
 		   				</div>
 		   				<div class="price-filter-range checkbox-price">
-							<p for="amount">Price range:</p>
+							<p for="amount">Price range (Rupiah) :</p>
 							<div class="col-twelve no-padding-section">
-								<div class="col-three no-padding-section">
-									<input type="checkbox" name="cost" value="cost-1" class="checkbox input-custom"><label>cost-1</label><br>
-				   					<input type="checkbox" name="cost" value="cost-2" class="checkbox input-custom"><label>cost-2</label><br>
-				   					<input type="checkbox" name="cost" value="cost-3" class="checkbox input-custom"><label>cost-3</label><br>
-				   					<input type="checkbox" name="cost" value="cost-4" class="checkbox input-custom"><label>cost-4</label><br>
-				   					<input type="checkbox" name="cost" value="cost-5" class="checkbox input-custom"><label>cost-5</label>
+								<div class="col-four no-padding-section">
+									<input type="checkbox" name="cost" value="cost-1" class="checkbox input-custom"><label>0 - 100.000</label><br>
+				   					<input type="checkbox" name="cost" value="cost-2" class="checkbox input-custom"><label>100.000 - 200.000</label><br>
+				   					<input type="checkbox" name="cost" value="cost-3" class="checkbox input-custom"><label>200.000 - 300.000</label><br>
+				   					<input type="checkbox" name="cost" value="cost-4" class="checkbox input-custom"><label>300.000 - 400.000</label><br>
+				   					<input type="checkbox" name="cost" value="cost-5" class="checkbox input-custom"><label>400.000 - 500.000</label>
 								</div>
-								<div class="col-three no-padding-section">
-									<input type="checkbox" name="cost" value="cost-6" class="checkbox input-custom"><label>cost-6</label><br>
-				   					<input type="checkbox" name="cost" value="cost-7" class="checkbox input-custom"><label>cost-7</label><br>
-				   					<input type="checkbox" name="cost" value="cost-8" class="checkbox input-custom"><label>cost-8</label><br>
-				   					<input type="checkbox" name="cost" value="cost-9" class="checkbox input-custom"><label>cost-9</label><br>
-				   					<input type="checkbox" name="cost" value="cost-10" class="checkbox input-custom"><label>cost-10</label>
+								<div class="col-four no-padding-section">
+									<input type="checkbox" name="cost" value="cost-6" class="checkbox input-custom"><label>500.000 - 600.000</label><br>
+				   					<input type="checkbox" name="cost" value="cost-7" class="checkbox input-custom"><label>600.000 - 700.000</label><br>
+				   					<input type="checkbox" name="cost" value="cost-8" class="checkbox input-custom"><label>700.000 - 800.000</label><br>
+				   					<input type="checkbox" name="cost" value="cost-9" class="checkbox input-custom"><label>800.000 - 900.000</label><br>
+				   					<input type="checkbox" name="cost" value="cost-10" class="checkbox input-custom"><label>900.000 - 1.000.000</label>
 								</div>
-								<div class="col-three no-padding-section">
-									<input type="checkbox" name="cost" value="cost-11" class="checkbox input-custom"><label>cost-11</label><br>
-				   					<input type="checkbox" name="cost" value="cost-12" class="checkbox input-custom"><label>cost-12</label><br>
-				   					<input type="checkbox" name="cost" value="cost-13" class="checkbox input-custom"><label>cost-13</label><br>
-		                			<input type="checkbox" name="cost" value="cost-14" class="checkbox input-custom"><label>cost-14</label>
+								<div class="col-four no-padding-section">
+									<input type="checkbox" name="cost" value="cost-11" class="checkbox input-custom"><label>1.000.000 - 1.100.000</label><br>
+				   					<input type="checkbox" name="cost" value="cost-12" class="checkbox input-custom"><label>1.100.000 - 1.200.000</label><br>
+				   					<input type="checkbox" name="cost" value="cost-13" class="checkbox input-custom"><label>1.200.000 - 1.300.000</label><br>
+		                			<input type="checkbox" name="cost" value="cost-14" class="checkbox input-custom"><label>1.300.000 - 1.400.000</label>
 								</div>
 							</div>
 							<div id="slider-range"></div>
@@ -267,7 +275,6 @@
 	   			<div class="col-twelve no-padding-section location">
 		   			<h6 class="filter-type-title">LOCATION</h6>
 		   			<form action="" class="location-form">
-              <input type="button" name="location" value="Apply filter" onClick="applyFilter(mapFilter)" class="input-custom"><br>
               <input type="checkbox" name="location" value="jakpus" class="checkbox input-custom"><label>Jakarta Pusat</label><br>
               <input type="checkbox" name="location" value="jaktim" class="checkbox input-custom"><label>Jakarta Timur</label><br>
               <input type="checkbox" name="location" value="jaksel" class="checkbox input-custom"><label>Jakarta Selatan</label><br>
@@ -281,11 +288,10 @@
 					   	<input type="button" name="location" value="jakbar" onClick="setFocusJakbar()" class="input-custom"><br>
 					   	<input type="button" name="location" value="jaktim" onClick="setFocusJaktim()" class="input-custom"><br>
 					   	<input type="button" name="location" value="jakpus" onClick="setFocusJakpus()" class="input-custom"><br> -->
-              <input type="button" name="location" value="jakarta" onClick="setFocusJakarta()" class="input-custom">
 		   			</form>
 		   		</div>
 
-		   		<div class="col-twelve no-padding-section rating">
+		   		<!-- <div class="col-twelve no-padding-section rating">
 		   			<h6 class="filter-type-title">RATING</h6>
 		   			<form action="" class="rating-form">
 		   				<input type="radio" name="rating" value="5" id="star5"><label for="star5"></label>
@@ -294,28 +300,33 @@
 		   				<input type="radio" name="rating" value="2" id="star2"><label for="star2"></label>
 		   				<input type="radio" name="rating" value="1" id="star1"><label for="star1"></label>
 			   		</form>
-		   		</div>
+		   		</div> -->
 
-		   		<div class="col-twelve search-filter no-padding-section">
+		   		<!-- <div class="col-twelve search-filter no-padding-section">
 					<form>
 						<input type="text" class="input-custom" placeholder="SEARCH BY REGION NAME">
 						<input type="submit" class="input-custom" value="">
 					</form>
-		   		</div>
+		   		</div> -->
 
 		   		<div class="col-twelve no-padding-section number-versus">
 		   			<h6 class="filter-type-title">WESTERN VS ASIAN</h6>
 		   			<div class="col-twelve no-padding-section number-versus-content">
-			   			<span id="western-number">1000</span>
+			   			<span id="western-number">650</span>
 			   			<span id="vs">vs</span>
-			   			<span id="asian-number">2000</span>
+			   			<span id="asian-number">614</span>
 			   		</div>
 		   		</div>
 
 		   		<div class="col-twelve summary no-padding-section">
-					<p>Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+					<p>3 of 5 subdistrict with highest average cost (Western or Asia) is in Central Jakarta district</p>
+					<p>In the whole DKI Jakarta, the ratio between Western and Asian restaurant is even</p>
 		   		</div>
 
+		   		<div class="col-twelve btn-filter no-padding-section">
+		   			<input type="button" name="location" value="Apply filter" onClick="applyFilter(mapFilter)" class="input-custom" id="apply-filter"><br>
+		   			<input type="button" name="location" value="View Jakarta" onClick="setFocusJakarta()" class="input-custom">
+		   		</div>
 	   		</div>
 
    			<div class="clearfix"></div>
