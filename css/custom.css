@@ -88,8 +88,9 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0 20px 0 0;
 }
 
-.map-section .map {
-	height: 526px;
+ #map {
+	height: 520px;
+	width: 100%;
 /*	background-color: #2b2a2a;*/
 	padding: 0;
 }
@@ -111,7 +112,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .legend {
 	background-color: #393636;
-	padding: 32px 25px;
+	padding: 52px 25px 0 25px;
+	width: 250px;
+	float: left;
+	height: 118px;
 }
 
 .span-legend {
@@ -136,6 +140,17 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	color: #fff;
 }
+
+.label-legend img, .label-legend p {
+	float: left;
+	margin-left: 8px;
+	position: relative;
+	top: 2px;
+}
+
+/*#label-legend-asian {
+	margin-left: 20px;
+}*/
 
 .padding-rect {
 	padding: 5px 0 0 0;
@@ -189,6 +204,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #legend-11 {
 	background-color: #ff332a;
+	margin-left: 20px;
 }
 
 #legend-green-20 {
@@ -231,6 +247,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: 5px;
 }
 
+.legend-label h3 {
+	margin-top: 17px;
+}
+
 .price-filter, .summary {
 	background-color: #393636;
 	height: 118px;
@@ -242,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
 	float: left;
 	text-align: center;
 	padding: 31px 21px;
-	height: inherit;
+	height: 118px;
 }
 
 .price-filter-label h3 {
@@ -381,7 +401,7 @@ h1, h2, h3, h4, h5, h6 {
 .rating-form > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating-form > input:checked ~ label:hover ~ label { color: #FFED85;  } 
 
-.search-filter, .summary, .number-versus {
+.search-filter, .summary, .number-versus, .btn-filter {
 	margin-top: 20px;
 }
 
@@ -438,6 +458,19 @@ h1, h2, h3, h4, h5, h6 {
 .summary p {
 	color: #fff;
 	font-size: 10px;
+}
+
+.btn-filter input[type="button"] {
+	height: 44px;
+	width: inherit;
+	font-size: inherit;
+	padding: 0;
+	line-height: 0;
+}
+
+#apply-filter {
+	background-color: #ff9900;
+	color: #fff;
 }
 
 .col-twelve h5 {

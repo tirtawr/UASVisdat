@@ -1,7 +1,7 @@
 // Provide your access token
 L.mapbox.accessToken = 'pk.eyJ1IjoidGlydGF3ciIsImEiOiJjaW5yYzkydjExMGp3dWlramtiaHdmNWphIn0.V5IbaPvJ6hp_HjTqTw8kHg';
 // Create a map in the div #map
-var map = L.mapbox.map('map', 'tirtawr.04ok4cf2');
+var map = L.mapbox.map('map', 'tirtawr.05gmd7lm');
 
 setFocusJakarta();
 
