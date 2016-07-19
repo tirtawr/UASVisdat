@@ -1,0 +1,25 @@
+* Rebuilt URL to: google.com/
+*   Trying 74.125.200.100...
+* Connected to google.com (127.0.0.1) port 80 (#0)
+> GET / HTTP/1.1
+> Host: google.com
+> User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30)
+> Accept: */*
+> Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+> Accept-Language: en-US,en;q=0.8
+> 
+< HTTP/1.1 302 Found
+< Location: http://www.google.co.id/?gws_rd=cr&ei=LLzfVrGiN4GfuQS-zbnYBw
+< Cache-Control: private
+< Content-Type: text/html; charset=UTF-8
+< P3P: CP="This is not a P3P policy! See https://www.google.com/support/accounts/answer/151657?hl=en for more info."
+< Date: Wed, 09 Mar 2016 06:01:16 GMT
+< Server: gws
+< X-XSS-Protection: 1; mode=block
+< X-Frame-Options: SAMEORIGIN
+< Content-Length: 261
+< Connection: Keep-Alive
+< Set-Cookie: NID=77=BorQhjLqv3cc_uZ39VXRHBapX6aAWqAR4r_RE6s22msY-Jy9TfuUxWgt4KZFxRBH1S6kbcRCQt3kLOm7JY1sETiOSqSMElfDBHjDQfRvVd_k4OE4G3C8SkVesYBCQnZP; expires=Thu, 08-Sep-2016 06:01:16 GMT; path=/; domain=.google.com; HttpOnly
+< 
+{ [261 bytes data]
+* Connection #0 to host google.com left intact
